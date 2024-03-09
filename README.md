@@ -13,4 +13,9 @@ A recursive function to print all the ways can build an input number with sum of
 cargo build
 ```
 
+## Run
+```bash
+cargo run
+```
+
 [Original Project](https://github.com/mahditn2000/recursiveBuildSum)
