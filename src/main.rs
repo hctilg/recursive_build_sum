@@ -1,7 +1,7 @@
 use std::io::{self, Write};
 
-fn find_sum(a: &Vec<i32>, used: &mut Vec<bool>, value: i32, index: usize, sum: i32) {
-    if index == 0 {
+fn find_sum(a: &[i32], used: &mut Vec<bool>, value: i32, index: i32, sum: i32) {
+    if index < 0 {
         // in the end of array we will print if we can build our sum in this way ^^
         if value == 0 {
             for i in (0..a.len()).rev() {
@@ -15,25 +15,25 @@ fn find_sum(a: &Vec<i32>, used: &mut Vec<bool>, value: i32, index: usize, sum: i
         return;
     }
 
-    if value == a[index] {
+    if value == a[index as usize] {
         // in two below lines we use current number to build our sum
-        used[index] = true;  // we let true in this flag because we use this number to build our sum
+        used[index as usize] = true;  // we let true in this flag because we use this number to build our sum
         find_sum(a, used, 0, index - 1, sum);  // newValue is zero because oldValue-a[index]=0
 
         //  and in two below lines we will not use current number to build our sum . if we delete these two below lines we will not have all the ways.
-        used[index] = false;  // we let false in this flag because we use this number to build our sum
+        used[index as usize] = false;  // we let false in this flag because we use this number to build our sum
         find_sum(a, used, value, index - 1, sum);  // newValue=value because we don't use this number(a[index])
-    } else if value < a[index] {
+    } else if value < a[index as usize] {
         // we can't use this number to build our sum because it's bigger than our value
-        used[index] = false;  // we let false in this flag because we use this number to build our sum
+        used[index as usize] = false;  // we let false in this flag because we use this number to build our sum
         find_sum(a, used, value, index - 1, sum);
-    } else if value > a[index] {
+    } else if value > a[index as usize] {
         // in two below lines we use current number to build our sum
-        used[index] = true;  // we let true in this flag because we use this number to build our sum
-        find_sum(a, used, value - a[index], index - 1, sum);  // newValue=oldValue-a[index]
+        used[index as usize] = true;  // we let true in this flag because we use this number to build our sum
+        find_sum(a, used, value - a[index as usize], index - 1, sum);  // newValue=oldValue-a[index]
 
         // and in two below lines we will not use current number to build our sum . if we delete these two below lines we will not have all the ways.
-        used[index] = false;  // we let false in this flag because we use this number to build our sum
+        used[index as usize] = false;  // we let false in this flag because we use this number to build our sum
         find_sum(a, used, value, index - 1, sum);
     }
 }
@@ -68,5 +68,5 @@ fn main() {
     let sum: i32 = input.trim().parse().unwrap();
 
     arr.sort();  // sort our vector . this line is important if we change it algorithm will not work.
-    find_sum(&arr, &mut used, sum, n - 1, sum);  // call the recursive function to print all the ways we can build sum.
+    find_sum(&arr, &mut used, sum, n as i32 - 1, sum);  // call the recursive function to print all the ways we can build sum.
 }
