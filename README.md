@@ -17,6 +17,7 @@ A recursive function to print all the ways can build an input number with sum of
 - [Java](/languages/java/README.md)
 - [Dart](/languages/dart/README.md)
 - [JavaScript](/languages/js/README.md)
+- [Lua](/languages/lua/README.md)
 
 ## Contribute
 
