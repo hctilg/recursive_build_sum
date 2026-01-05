@@ -10,6 +10,7 @@ A recursive function to print all the ways can build an input number with sum of
 
 - [Rust](/languages/rust/README.md)
 - [Ruby](/languages/ruby/README.md)
+- [Python](/languages/python/README.md)
 
 ## Contribute
 
