@@ -1,4 +1,4 @@
-### [Back](../../README.md)
+### [Back](/)
 
 # Recursive Build Sum with Rust
 
