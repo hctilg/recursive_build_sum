@@ -8,19 +8,19 @@ A recursive function to print all the ways can build an input number with sum of
 
 ## Languages
 
-- [Rust](/languages/rust/README.md)
-- [Ruby](/languages/ruby/README.md)
-- [Python](/languages/python/README.md)
-- [PHP](/languages/php/README.md)
 - [Bash](/languages/bash/README.md)
 - [C](/languages/c/README.md)
 - [C++](/languages/cpp/README.md)
-- [Perl](/languages/lua/README.md)
-- [Java](/languages/java/README.md)
 - [Dart](/languages/dart/README.md)
 - [Go](/languages/go/README.md)
+- [Java](/languages/java/README.md)
 - [JavaScript](/languages/js/README.md)
 - [Lua](/languages/lua/README.md)
+- [Perl](/languages/perl/README.md)
+- [PHP](/languages/php/README.md)
+- [Python](/languages/python/README.md)
+- [Ruby](/languages/ruby/README.md)
+- [Rust](/languages/rust/README.md)
 
 ## Contribute
 
