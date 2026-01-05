@@ -15,6 +15,7 @@ A recursive function to print all the ways can build an input number with sum of
 - [C](/languages/c/README.md)
 - [C++](/languages/cpp/README.md)
 - [Java](/languages/java/README.md)
+- [Dart](/languages/dart/README.md)
 
 ## Contribute
 
