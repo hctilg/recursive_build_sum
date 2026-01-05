@@ -14,6 +14,7 @@ A recursive function to print all the ways can build an input number with sum of
 - [PHP](/languages/php/README.md)
 - [C](/languages/c/README.md)
 - [C++](/languages/cpp/README.md)
+- [Java](/languages/java/README.md)
 
 ## Contribute
 
