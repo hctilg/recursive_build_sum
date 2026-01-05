@@ -13,6 +13,7 @@ A recursive function to print all the ways can build an input number with sum of
 - [Python](/languages/python/README.md)
 - [PHP](/languages/php/README.md)
 - [C](/languages/c/README.md)
+- [C++](/languages/cpp/README.md)
 
 ## Contribute
 
